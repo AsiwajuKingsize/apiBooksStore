@@ -1,0 +1,14 @@
+C:\Project\apiBooksStore\apiBooksStore\bin\Debug\netcoreapp2.2\apiBooksStore.deps.json
+C:\Project\apiBooksStore\apiBooksStore\bin\Debug\netcoreapp2.2\apiBooksStore.runtimeconfig.json
+C:\Project\apiBooksStore\apiBooksStore\bin\Debug\netcoreapp2.2\apiBooksStore.runtimeconfig.dev.json
+C:\Project\apiBooksStore\apiBooksStore\bin\Debug\netcoreapp2.2\apiBooksStore.dll
+C:\Project\apiBooksStore\apiBooksStore\bin\Debug\netcoreapp2.2\apiBooksStore.pdb
+C:\Project\apiBooksStore\apiBooksStore\obj\Debug\netcoreapp2.2\apiBooksStore.csproj.CoreCompileInputs.cache
+C:\Project\apiBooksStore\apiBooksStore\obj\Debug\netcoreapp2.2\apiBooksStore.RazorAssemblyInfo.cache
+C:\Project\apiBooksStore\apiBooksStore\obj\Debug\netcoreapp2.2\apiBooksStore.RazorAssemblyInfo.cs
+C:\Project\apiBooksStore\apiBooksStore\obj\Debug\netcoreapp2.2\apiBooksStore.AssemblyInfoInputs.cache
+C:\Project\apiBooksStore\apiBooksStore\obj\Debug\netcoreapp2.2\apiBooksStore.AssemblyInfo.cs
+C:\Project\apiBooksStore\apiBooksStore\obj\Debug\netcoreapp2.2\apiBooksStore.RazorTargetAssemblyInfo.cache
+C:\Project\apiBooksStore\apiBooksStore\obj\Debug\netcoreapp2.2\apiBooksStore.dll
+C:\Project\apiBooksStore\apiBooksStore\obj\Debug\netcoreapp2.2\apiBooksStore.pdb
+C:\Project\apiBooksStore\apiBooksStore\obj\Debug\netcoreapp2.2\apiBooksStore.csprojAssemblyReference.cache
