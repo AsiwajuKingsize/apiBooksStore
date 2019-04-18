@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,6 +19,9 @@ namespace apiBooksStore.Controllers
             _context = context;
         }
         List<int> Firstquarter = new List<int>() { 1,2,3};
+        List<int> Secondquarter = new List<int>() { 4, 5, 6 };
+        List<int> Thirdquarter = new List<int>() { 7, 8, 9 };
+        List<int> Fourthquarter = new List<int>() { 10, 11, 12 };
         /// <summary>
         /// Get Quarterly sales Report for Book
         /// </summary>
@@ -37,7 +40,8 @@ namespace apiBooksStore.Controllers
                 {
 
                     List<QuarterlySales> quaterlySalesquery = (from sales in _context.BookSales
-                                                               where sales.Quantity > 0  && ((sales.SaleDate).Date.Year == Year) && ((sales.SaleDate).Date.Month==1 || (sales.SaleDate).Date.Month == 2 || (sales.SaleDate).Date.Month == 3)
+                                                               where sales.Quantity > 0  && ((sales.SaleDate).Date.Year == Year)
+                                                               where Firstquarter.Contains((sales.SaleDate).Date.Month)
                                                                group sales by sales.BookId into grpSales
                                                                select new QuarterlySales
                                                                {
@@ -59,7 +63,8 @@ namespace apiBooksStore.Controllers
                 else if (Quarter == 2)
                 {
                     List<QuarterlySales> quaterlySalesquery = (from sales in _context.BookSales
-                                                               where sales.Quantity > 0 && ((sales.SaleDate).Date.Year == Year) && ((sales.SaleDate).Date.Month == 4 || (sales.SaleDate).Date.Month == 5 || (sales.SaleDate).Date.Month == 6)
+                                                               where sales.Quantity > 0 && ((sales.SaleDate).Date.Year == Year)
+                                                               where Secondquarter.Contains((sales.SaleDate).Date.Month)
                                                                group sales by sales.BookId into grpSales
                                                                select new QuarterlySales
                                                                {
@@ -82,7 +87,8 @@ namespace apiBooksStore.Controllers
                 else if (Quarter == 3 )
                 {
                     List<QuarterlySales> quaterlySalesquery = (from sales in _context.BookSales
-                                                               where sales.Quantity > 0 && ((sales.SaleDate).Date.Year == Year) && ((sales.SaleDate).Date.Month == 7 || (sales.SaleDate).Date.Month == 8 || (sales.SaleDate).Date.Month == 9)
+                                                               where sales.Quantity > 0 && ((sales.SaleDate).Date.Year == Year)
+                                                               where Thirdquarter.Contains((sales.SaleDate).Date.Month)
                                                                group sales by sales.BookId into grpSales
                                                                select new QuarterlySales
                                                                {
@@ -105,7 +111,8 @@ namespace apiBooksStore.Controllers
                 else
                 {
                     List<QuarterlySales> quaterlySalesquery = (from sales in _context.BookSales
-                                                               where sales.Quantity > 0 && ((sales.SaleDate).Date.Year == Year) && ((sales.SaleDate).Date.Month == 10 || (sales.SaleDate).Date.Month == 11 || (sales.SaleDate).Date.Month == 12)
+                                                               where sales.Quantity > 0 && ((sales.SaleDate).Date.Year == Year)
+                                                               where Fourthquarter.Contains((sales.SaleDate).Date.Month)
                                                                group sales by sales.BookId into grpSales
                                                                select new QuarterlySales
                                                                {
